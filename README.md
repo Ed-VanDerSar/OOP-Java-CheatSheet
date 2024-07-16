@@ -1,6 +1,6 @@
-# OPP-Java-CheatSheet
+# OOP-Java-CheatSheet
 Java Cheat Sheet
 
 ## Key Concepts
 
-1. 
+1. __Object__
