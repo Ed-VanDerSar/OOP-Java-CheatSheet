@@ -4,11 +4,11 @@ Java Cheat Sheet
 
 ## Table of Contents 
 1. [Key Concepts](#1-key-concepts)
-2. Inheritance
-3. Polymorphism
-4. Overriding and Overloading 
-5. Encapsulation
-6. Abstraction
+2. [Inheritance](#2-inheritance)
+3. [Polymorphism](#3-polymorphism)
+4. [Overriding and Overloading](#4_overriding_and_overloading)
+5. [Encapsulation](#5-encapsulation)
+6. [Abstraction](#6-abstraction)
 
 ## 1. Key Concepts
 
@@ -54,9 +54,19 @@ public class Main {
 ```
 
 
-## Inheritance 
+## 2. Inheritance 
 
-## Abstraction
+
+## 3. Polymorphism
+
+
+## 4. Overriding and Overloading 
+
+
+## 5. Encapsulation
+
+
+## 6. Abstraction
 
 **Definition:** Abstraction is one of the four fundamental principles of OOP. It is the process of hiding the complex implementation details and showing only the essential features of an object. Abstraction allows programmers to reduce complexity and increase efficiency by focusing on what an object does rather than how it does it.
 
