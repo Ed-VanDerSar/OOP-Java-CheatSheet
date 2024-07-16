@@ -71,7 +71,7 @@ Simplifies code maintenance and modification.
 
 Using the extends keyword in Java to let one class inherit from another.
 Overriding superclass methods in the subclass when necessary.
-
+```java
 class Vehicle {
   protected String brand = "Ford";        // Vehicle attribute
   public void honk() {                    // Vehicle method
@@ -93,7 +93,7 @@ class Car extends Vehicle {
     System.out.println(myCar.brand + " " + myCar.modelName);
   }
 }
-
+```
 
 
 
