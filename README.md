@@ -6,7 +6,7 @@ Java Cheat Sheet
 1. [Key Concepts](#1-key-concepts)
 2. [Inheritance](#2-inheritance)
 3. [Polymorphism](#3-polymorphism)
-4. [Overriding and Overloading](#4_overriding_and_overloading)
+
 5. [Encapsulation](#5-encapsulation)
 6. [Abstraction](#6-abstraction)
 
@@ -78,8 +78,55 @@ Overriding superclass methods in the subclass when necessary.
 
 ## 3. Polymorphism
 
+Polymorphism is a core concept in Object-Oriented Programming (OOP) that allows methods to perform different tasks based on the object that it is acting upon. It provides a way to use a single interface to represent different underlying forms (data types).
 
-## 4. Overriding and Overloading 
+### Key Points of Polymorphism
+
+1. **Compile-time (Static) Polymorphism**: Achieved through method overloading.
+2. **Run-time (Dynamic) Polymorphism**: Achieved through method overriding.
+
+### Benefits of Polymorphism
+
+- **Flexibility**: Write more general and reusable code.
+- **Maintainability**: Easier to maintain and update code.
+
+### Types of Polymorphism
+
+#### 1. Compile-time (Static) Polymorphism
+
+This type of polymorphism is achieved by method overloading. It allows a class to have more than one method with the same name, as long as their parameter lists are different.
+
+##### Example of Method Overloading
+
+```java
+public class MathOperations {
+    // Method to add two integers
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method to add three integers
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Method to add two double values
+    public double add(double a, double b) {
+        return a + b;
+    }
+}
+```
+
+public class Main {
+    public static void main(String[] args) {
+        MathOperations math = new MathOperations();
+
+        System.out.println(math.add(5, 3));           // Output: 8
+        System.out.println(math.add(5, 3, 2));        // Output: 10
+        System.out.println(math.add(5.5, 3.3));       // Output: 8.8
+    }
+}
+
 
 
 ## 5. Encapsulation
