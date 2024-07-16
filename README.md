@@ -117,7 +117,14 @@ class Car extends Vehicle {
 
 **How to Achieve Abstraction:** 
 - Using abstract classes and interfaces.
+- Use the interface keyword to create an interface
+- Use the implements keyword to implement a interface in a class 
+- Use the abstract keyword before the class keyword when defining an abstract class.
+- For each method where you don't implement the details, use the abstract keyword before the return type of the method.
 - Defining methods without implementing their details, leaving the specifics to the derived classes.
+- When you extend an abstract class to a normal class, you need to override all the abstract methods.
+
+### Example with abstract classes 
 
 **Code Example in Java:**
 ```java
@@ -145,4 +152,9 @@ public class Main {
         myCar.stopEngine();
     }
 }
+```
+### Example with interfaces 
+
+
+
 
