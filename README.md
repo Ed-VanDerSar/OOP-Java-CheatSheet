@@ -235,6 +235,19 @@ public class Main {
     }
 }
 ```
+## Differences between Abstract Classes and Interfaces
+
+| Feature                       | Abstract Classes                                   | Interfaces                                         |
+|-------------------------------|----------------------------------------------------|----------------------------------------------------|
+| **Keyword**                   | `abstract`                                         | `interface`                                        |
+| **Method Implementation**     | Can have both abstract and fully implemented methods | Can only have abstract methods (Java 7 and earlier), can have default and static methods (Java 8 and later) |
+| **Fields**                    | Can have instance variables (fields)               | Can only have static final variables (constants)   |
+| **Multiple Inheritance**      | A class can inherit only one abstract class        | A class can implement multiple interfaces          |
+| **Constructors**              | Can have constructors                             | Cannot have constructors                           |
+| **Access Modifiers**          | Can have all types of access modifiers (public, protected, private) | Methods are public and abstract by default, and fields are public, static, and final by default |
+| **Inheritance**               | Used when classes share a common base class and want to share code (inherit behavior) | Used to define a contract that multiple classes can implement |
+| **Use Case**                  | Best for when classes share a common state and behavior | Best for defining a contract that unrelated classes can implement |
+
 
 
 
