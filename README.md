@@ -12,15 +12,17 @@ Java Cheat Sheet
 
 ## Key Concepts
 
-1. __Class__ A template used to create objects
+1. __Class:__ A template used to create objects
 ```java
    public class ClassName {
        // Atributos (variables)
        // Methods (behaviour)
    }
 ```
-3. __Object__
+2. __Object:__ Is the instance of a class 
+```java
 
+```
 
 
 
