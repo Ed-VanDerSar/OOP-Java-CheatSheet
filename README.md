@@ -135,6 +135,39 @@ public class Main {
 }
 ```
 ### Example with interfaces 
+```
+// Define an interface
+interface Payment {
+    void processPayment(double amount);
+}
+
+// Implement the interface in a class
+class CreditCardPayment implements Payment {
+    @Override
+    public void processPayment(double amount) {
+        System.out.println("Processing credit card payment of $" + amount);
+    }
+}
+
+// Implement the interface in another class
+class PayPalPayment implements Payment {
+    @Override
+    public void processPayment(double amount) {
+        System.out.println("Processing PayPal payment of $" + amount);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Payment creditCardPayment = new CreditCardPayment();
+        Payment payPalPayment = new PayPalPayment();
+        
+        creditCardPayment.processPayment(100.00);
+        payPalPayment.processPayment(200.00);
+    }
+}
+```
+
 
 
 
