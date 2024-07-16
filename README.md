@@ -21,9 +21,37 @@ Java Cheat Sheet
 ```
 2. __Object:__ Is the instance of a class 
 ```java
-
+   ClassName obj = new ClassName();
 ```
+### Example 
+```java
+ // Class definition
+public class Car {
+    // Fields
+    int year;
+    String model;
 
+    // Constructor
+    public Car(int year, String model) {
+        this.year = year;
+        this.model = model;
+    }
+
+    // Method
+    public void display() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object
+        Car myCar = new Car(2020, "Toyota");
+        myCar.display(); // Method call
+    }
+}
+```
 
 
 ## Inheritance 
