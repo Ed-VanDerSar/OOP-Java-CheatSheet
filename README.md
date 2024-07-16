@@ -3,7 +3,7 @@ Java Cheat Sheet
 
 
 ## Table of Contents 
-1. [Key Concepts]{#1}
+1. [Key Concepts]()
 2. Inheritance
 3. Polymorphism
 4. Overriding and Overloading 
