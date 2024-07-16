@@ -56,6 +56,44 @@ public class Main {
 
 ## 2. Inheritance 
 
+**Definition:** Inheritance is one of the four fundamental principles of Object-Oriented Programming (OOP). It is the mechanism by which one class (subclass) can inherit the attributes and methods of another class (superclass). Inheritance promotes code reuse and establishes a hierarchical relationship between classes, allowing subclasses to extend or modify the behavior of their superclasses.
+
+**Example:** Consider a base class Animal that has a method makeSound(). You might have subclasses like Dog and Cat that inherit from Animal, each implementing its own version of the makeSound() method. This allows defining specific behaviors for each type of animal without duplicating common code.
+
+**Benefits:**
+
+Facilitates code reuse.
+Promotes hierarchical organization and structure of classes.
+Allows code extensibility.
+Simplifies code maintenance and modification.
+
+
+**How to Achieve Inheritance:**
+
+Using the extends keyword in Java to let one class inherit from another.
+Overriding superclass methods in the subclass when necessary.
+
+ExampleGet your own Java Server
+class Vehicle {
+  protected String brand = "Ford";        // Vehicle attribute
+  public void honk() {                    // Vehicle method
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mustang";    // Car attribute
+  public static void main(String[] args) {
+
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (from the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+    System.out.println(myCar.brand + " " + myCar.modelName);
+
 
 ## 3. Polymorphism
 
