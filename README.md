@@ -12,7 +12,9 @@ Java Cheat Sheet
 
 ## Key Concepts
 
-1. __Object__
+1. __Object__ A template used to create objects
+
+2. __Object__
 
 
 
