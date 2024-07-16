@@ -6,18 +6,15 @@ Java Cheat Sheet
 1. Key Concepts
 2. Inheritance
 3. Polymorphism
-4. Encapsulation
-5. Abstraction
+4. Overriding and Overloading 
+5. Encapsulation
+6. Abstraction
 
 ## Key Concepts
 
 1. __Object__
 
 
-
-
-# OPP-Java-CheatSheet
-Java Cheat Sheet
 
 
 ## Inheritance 
