@@ -12,9 +12,14 @@ Java Cheat Sheet
 
 ## Key Concepts
 
-1. __Object__ A template used to create objects
-
-2. __Object__
+1. __Class__ A template used to create objects
+```java
+   public class ClassName {
+       // Atributos (variables)
+       // Methods (behaviour)
+   }
+```
+3. __Object__
 
 
 
