@@ -132,9 +132,8 @@ Polymorphism is a core concept in Object-Oriented Programming (OOP) that allows 
 
 This type of polymorphism is achieved by method overloading. It allows a class to have more than one method with the same name, as long as their parameter lists are different.
 
-##Method Overloading and Overriding in Java
 
-##Method Overloading
+ ### Method Overloading
 
 Definition: Method overloading is a feature that allows a class to have more than one method with the same name, but different parameters (different type, number, or both). It is a way to achieve compile-time polymorphism.
 
@@ -182,7 +181,7 @@ public class Main {
     }
 }
 ```
-###Method Overriding
+### Method Overriding
 
 Definition: Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method in the subclass should have the same name, return type, and parameters as the method in the superclass. It is a way to achieve runtime polymorphism.
 
