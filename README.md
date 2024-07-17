@@ -230,10 +230,10 @@ public class Main {
 ```
 ### Explanation
 
-* The Person class has private fields name and age.
+* The `Person` class has private fields `name` and `age`.
 * Public getter and setter methods are provided to access and update these private fields.
-* The setAge method includes a validation check to ensure the age is positive.
-* In the Main class, an object of the Person class is created, and its fields are accessed and modified using the getter and setter methods.
+* The `setAge` method includes a validation check to ensure the age is positive.
+* In the `Main` class, an object of the `Person` class is created, and its fields are accessed and modified using the getter and setter methods.
 
   <br>
 
