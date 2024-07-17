@@ -289,7 +289,7 @@ public class Main {
     }
 }
 ```
-### Example with interfaces :bookmark:
+### Example with interfaces
 ```
 // Define an interface
 interface Payment {
@@ -322,7 +322,7 @@ public class Main {
     }
 }
 ```
-## Differences between Abstract Classes and Interfaces :bookmark:
+###  Differences between Abstract Classes and Interfaces 
 
 | Feature                       | Abstract Classes                                   | Interfaces                                         |
 |-------------------------------|----------------------------------------------------|----------------------------------------------------|
