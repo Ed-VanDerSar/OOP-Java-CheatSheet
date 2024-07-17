@@ -149,8 +149,7 @@ How to Achieve Method Overloading:
 Define multiple methods with the same name but different parameter lists within the same class.
 Code Example in Java:
 
-java
-Copiar código
+```java
 class MathUtils {
     // Method to add two integers
     int add(int a, int b) {
@@ -182,6 +181,7 @@ public class Main {
         System.out.println(math.add(2.5, 3.5, 4.5)); // Output: 10.5
     }
 }
+```
 ###Method Overriding
 
 Definition: Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method in the subclass should have the same name, return type, and parameters as the method in the superclass. It is a way to achieve runtime polymorphism.
@@ -197,7 +197,7 @@ How to Achieve Method Overriding:
 Use the @Override annotation (optional but recommended) to indicate that a method is being overridden in the subclass.
 Code Example in Java:
 
-java
+```java
 Copiar código
 // Base class or superclass
 class Animal {
@@ -231,6 +231,7 @@ public class Main {
         myCat.makeSound(); // Output: The cat meows
     }
 }
+```
 In this example, Dog and Cat override the makeSound() method of the Animal class to provide their own specific behavior.
 
 
