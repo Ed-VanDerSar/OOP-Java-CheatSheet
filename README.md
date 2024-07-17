@@ -229,7 +229,7 @@ public class Main {
 ```
 In this example, `Dog` and `Cat` override the `makeSound()` method of the `Animal` class to provide their own specific behavior.
 
-##Casting in Java
+## Casting in Java
 
 Definition: Casting in Java is the process of converting a variable from one type to another. It is typically used to convert data types so that they can be used in different operations, or to convert object references so that they can be used in different contexts.
 
@@ -254,7 +254,7 @@ public class Main {
         System.out.println(myDouble); // Output: 9.0
     }
 }
-##Reference Type Casting
+## Reference Type Casting
 
 Definition: Reference type casting is used to convert objects from one type to another within an inheritance hierarchy. It can be further divided into two categories:
 
@@ -262,7 +262,8 @@ Upcasting: Converting a subclass type to a superclass type. This is implicit.
 Downcasting: Converting a superclass type to a subclass type. This must be done explicitly and requires a type check to avoid ClassCastException.
 
 
-#Example of Upcasting:
+# Example of Upcasting:
+```
 class Animal {
     void makeSound() {
         System.out.println("The animal makes a sound");
@@ -288,9 +289,10 @@ public class Main {
         // myDog.fetch(); // This line would cause a compile-time error
     }
 }
+```
 
-#Example of Downcasting:
-
+# Example of Downcasting:
+```
 public class Main {
     public static void main(String[] args) {
         Animal myAnimal = new Dog(); // Upcasting
@@ -302,6 +304,7 @@ public class Main {
         }
     }
 }
+```
 
 In this example, we first upcast a Dog object to an Animal reference. This is safe and implicit. To access Dog-specific methods, we need to downcast the Animal reference back to a Dog reference. We use the instanceof operator to ensure the object is of the correct type before downcasting.
 
@@ -396,7 +399,7 @@ public class AccessModifiers {
         System.out.println("Private: " + am.privateVar);
     }
 }
-
+```
 ### Example of the Main Class to Demonstrate Encapsulation
 
 ```java
