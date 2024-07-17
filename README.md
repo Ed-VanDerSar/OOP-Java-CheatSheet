@@ -240,9 +240,8 @@ Primitive Type Casting
 Reference Type Casting
 1. Primitive Type Casting
 Definition: Primitive type casting is used to convert one primitive data type into another. It can be further divided into two categories:
-
-Implicit (Widening) Casting: Automatically done by the Java compiler when a smaller type is converted to a larger type.
-Explicit (Narrowing) Casting: Manually done by the programmer when a larger type is converted to a smaller type.
+     1. Implicit (Widening) Casting: Automatically done by the Java compiler when a smaller type is converted to a larger type.
+    2. Explicit (Narrowing) Casting: Manually done by the programmer when a larger type is converted to a smaller type.
 Example of Implicit Casting (Widening):
 ```
 public class Main {
