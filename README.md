@@ -8,7 +8,12 @@
 [Edwin Anzures](https://github.com/Ed-VanDerSar)
 >  
 
+<br>
 
+> [!IMPORTANT]
+> Understanding these key aspects of Java OOP will help you write cleaner, more efficient, and more maintainable code. Each concept builds on the others, providing a powerful toolkit for software development.
+
+<br>
 
 <br>
 
