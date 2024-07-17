@@ -210,6 +210,39 @@ public class Person {
     }
 }
 ```
+## Access Modifiers in Java
+
+| Modifier      | Class | Package | Subclass (same package) | Subclass (different package) | World |
+|---------------|-------|---------|-------------------------|------------------------------|-------|
+| **public**    | Yes   | Yes     | Yes                     | Yes                          | Yes   |
+| **protected** | Yes   | Yes     | Yes                     | Yes                          | No    |
+| **no modifier (default)** | Yes   | Yes     | Yes                     | No                           | No    |
+| **private**   | Yes   | No      | No                      | No                           | No    |
+
+### Description
+
+- **public**: The member is accessible from any other class.
+- **protected**: The member is accessible within its own package and by subclasses.
+- **no modifier (default)**: The member is accessible only within its own package.
+- **private**: The member is accessible only within its own class.
+
+### Code Example
+```java
+public class AccessModifiers {
+    public int publicVar = 1;
+    protected int protectedVar = 2;
+    int defaultVar = 3; // default access modifier
+    private int privateVar = 4;
+
+    public static void main(String[] args) {
+        AccessModifiers am = new AccessModifiers();
+        System.out.println("Public: " + am.publicVar);
+        System.out.println("Protected: " + am.protectedVar);
+        System.out.println("Default: " + am.defaultVar);
+        System.out.println("Private: " + am.privateVar);
+    }
+}
+
 ### Example of the Main Class to Demonstrate Encapsulation
 
 ```java
