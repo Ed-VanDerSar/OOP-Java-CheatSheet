@@ -19,7 +19,7 @@
 4. [Encapsulation](#5-encapsulation)
 5. [Abstraction](#6-abstraction)
 
-## 1. Key Concepts
+## 1. Key Concepts :bookmark:
 
 1. __Class:__ A template used to create objects
 ```java
@@ -63,7 +63,7 @@ public class Main {
 ```
 
 
-## 2. Inheritance 
+## 2. Inheritance :bookmark:
 
 **Definition:** Inheritance is one of the four fundamental principles of Object-Oriented Programming (OOP). It is the mechanism by which one class (subclass) can inherit the attributes and methods of another class (superclass). Inheritance promotes code reuse and establishes a hierarchical relationship between classes, allowing subclasses to extend or modify the behavior of their superclasses.
 
@@ -107,7 +107,7 @@ class Car extends Vehicle {
 
 
 
-## 3. Polymorphism
+## 3. Polymorphism :bookmark:
 
 Polymorphism is a core concept in Object-Oriented Programming (OOP) that allows methods to perform different tasks based on the object that it is acting upon. It provides a way to use a single interface to represent different underlying forms (data types).
 
@@ -160,10 +160,10 @@ public class Main {
 ```
 
 
-## 4. Encapsulation
+## 4. Encapsulation :bookmark:
 
 
-## 5. Abstraction
+## 5. Abstraction :bookmark:
 
 **Definition:** Abstraction is one of the four fundamental principles of OOP. It is the process of hiding the complex implementation details and showing only the essential features of an object. Abstraction allows programmers to reduce complexity and increase efficiency by focusing on what an object does rather than how it does it.
 
@@ -185,7 +185,7 @@ public class Main {
 
 ### Example with abstract classes 
 
-**Code Example in Java:**
+**Code Example in Java:** 
 ```java
 abstract class Car {
     abstract void startEngine();
@@ -212,7 +212,7 @@ public class Main {
     }
 }
 ```
-### Example with interfaces 
+### Example with interfaces :bookmark:
 ```
 // Define an interface
 interface Payment {
@@ -245,7 +245,7 @@ public class Main {
     }
 }
 ```
-## Differences between Abstract Classes and Interfaces
+## Differences between Abstract Classes and Interfaces :bookmark:
 
 | Feature                       | Abstract Classes                                   | Interfaces                                         |
 |-------------------------------|----------------------------------------------------|----------------------------------------------------|
