@@ -254,6 +254,64 @@ public class Main {
         System.out.println(myDouble); // Output: 9.0
     }
 }
+##Reference Type Casting
+
+Definition: Reference type casting is used to convert objects from one type to another within an inheritance hierarchy. It can be further divided into two categories:
+
+Upcasting: Converting a subclass type to a superclass type. This is implicit.
+Downcasting: Converting a superclass type to a subclass type. This must be done explicitly and requires a type check to avoid ClassCastException.
+
+
+#Example of Upcasting:
+class Animal {
+    void makeSound() {
+        System.out.println("The animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("The dog barks");
+    }
+
+    void fetch() {
+        System.out.println("The dog fetches the ball");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog(); // Upcasting: Dog to Animal
+        myDog.makeSound(); // Output: The dog barks
+
+        // myDog.fetch(); // This line would cause a compile-time error
+    }
+}
+
+#Example of Downcasting:
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myAnimal = new Dog(); // Upcasting
+        myAnimal.makeSound(); // Output: The dog barks
+
+        if (myAnimal instanceof Dog) {
+            Dog myDog = (Dog) myAnimal; // Downcasting
+            myDog.fetch(); // Output: The dog fetches the ball
+        }
+    }
+}
+
+In this example, we first upcast a Dog object to an Animal reference. This is safe and implicit. To access Dog-specific methods, we need to downcast the Animal reference back to a Dog reference. We use the instanceof operator to ensure the object is of the correct type before downcasting.
+
+Benefits of Casting
+Code Reusability: By casting, we can reuse methods and fields from the superclass.
+Flexibility: Casting allows us to write flexible and reusable code that can work with objects of different types.
+Risks of Casting
+ClassCastException: Downcasting can throw a ClassCastException if the object being cast is not of the target type. Always use instanceof to avoid this.
+Data Loss: Narrowing primitive type casting can lead to data loss if the value is out of the range of the target type.
+
 
 
 ## 4. Encapsulation :bookmark:
