@@ -128,10 +128,6 @@ Polymorphism is a core concept in Object-Oriented Programming (OOP) that allows 
 
 ### Types of Polymorphism
 
-#### 1. Compile-time (Static) Polymorphism
-
-This type of polymorphism is achieved by method overloading. It allows a class to have more than one method with the same name, as long as their parameter lists are different.
-
 
  ### Method Overloading
 
@@ -231,7 +227,7 @@ public class Main {
     }
 }
 ```
-In this example, Dog and Cat override the makeSound() method of the Animal class to provide their own specific behavior.
+In this example, `Dog` and `Cat` override the `makeSound()` method of the `Animal` class to provide their own specific behavior.
 
 
 ## 4. Encapsulation :bookmark:
