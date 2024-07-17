@@ -229,6 +229,22 @@ public class Main {
 ```
 In this example, `Dog` and `Cat` override the `makeSound()` method of the `Animal` class to provide their own specific behavior.
 
+##Casting in Java
+
+Definition: Casting in Java is the process of converting a variable from one type to another. It is typically used to convert data types so that they can be used in different operations, or to convert object references so that they can be used in different contexts.
+
+Types of Casting
+There are two main types of casting in Java:
+
+Primitive Type Casting
+Reference Type Casting
+1. Primitive Type Casting
+Definition: Primitive type casting is used to convert one primitive data type into another. It can be further divided into two categories:
+
+Implicit (Widening) Casting: Automatically done by the Java compiler when a smaller type is converted to a larger type.
+Explicit (Narrowing) Casting: Manually done by the programmer when a larger type is converted to a smaller type.
+Example of Implicit Casting (Widening):
+
 
 ## 4. Encapsulation :bookmark:
 
