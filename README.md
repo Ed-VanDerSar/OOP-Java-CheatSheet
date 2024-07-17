@@ -162,6 +162,83 @@ public class Main {
 
 ## 4. Encapsulation :bookmark:
 
+Encapsulation is a fundamental concept of Object-Oriented Programming (OOP) in Java. It is the mechanism of wrapping the data (variables) and the code (methods) acting on the data into a single unit, usually a class. This helps to keep the data safe from outside interference and misuse.
+
+### Key Points of Encapsulation
+
+
+* Data Hiding: Internal object details are hidden from the outside world. Only essential aspects are exposed through a public interface.
+* Access Modifiers: Java provides four access modifiers: private, default, protected, and public to achieve encapsulation.
+* Getter and Setter Methods: Used to access and update the values of private fields.
+
+### Benefits of Encapsulation
+
+* Control: The class controls what is stored and how it is accessed.
+* Flexibility and Maintainability: The internal representation of an object can be changed without affecting the outside code.
+* Improved Security: Restricts unauthorized access to certain components of an object.
+
+### Example of an encapsulated class
+
+```java
+public class Person {
+    // Private fields
+    private String name;
+    private int age;
+
+    // Getter method for name
+    public String getName() {
+        return name;
+    }
+
+    // Setter method for name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter method for age
+    public int getAge() {
+        return age;
+    }
+
+    // Setter method for age
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        } else {
+            System.out.println("Please enter a valid age.");
+        }
+    }
+}
+```
+### Example of the Main Class to Demonstrate Encapsulation
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of the Person class
+        Person person = new Person();
+
+        // Setting values using setter methods
+        person.setName("John Doe");
+        person.setAge(30);
+
+        // Accessing values using getter methods
+        System.out.println("Name: " + person.getName()); // Output: Name: John Doe
+        System.out.println("Age: " + person.getAge());   // Output: Age: 30
+    }
+}
+```
+### Explanation
+
+* The Person class has private fields name and age.
+* Public getter and setter methods are provided to access and update these private fields.
+* The setAge method includes a validation check to ensure the age is positive.
+* In the Main class, an object of the Person class is created, and its fields are accessed and modified using the getter and setter methods.
+
+  <br>
+
+> [!IMPORTANT]
+> Encapsulation ensures that the internal state of an object is protected and can only be modified through well-defined methods, enhancing the robustness and maintainability of the code.
 
 ## 5. Abstraction :bookmark:
 
