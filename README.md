@@ -255,7 +255,7 @@ public class Main {
     }
 }
 ```
-## Reference Type Casting
+### Reference Type Casting
 
 Definition: Reference type casting is used to convert objects from one type to another within an inheritance hierarchy. It can be further divided into two categories:
 
@@ -263,7 +263,7 @@ Upcasting: Converting a subclass type to a superclass type. This is implicit.
 Downcasting: Converting a superclass type to a subclass type. This must be done explicitly and requires a type check to avoid ClassCastException.
 
 
-# Example of Upcasting:
+### Example of Upcasting:
 ```
 class Animal {
     void makeSound() {
@@ -292,7 +292,7 @@ public class Main {
 }
 ```
 
-# Example of Downcasting:
+### Example of Downcasting:
 ```
 public class Main {
     public static void main(String[] args) {
