@@ -245,6 +245,16 @@ Implicit (Widening) Casting: Automatically done by the Java compiler when a smal
 Explicit (Narrowing) Casting: Manually done by the programmer when a larger type is converted to a smaller type.
 Example of Implicit Casting (Widening):
 
+public class Main {
+    public static void main(String[] args) {
+        int myInt = 9;
+        double myDouble = myInt; // Implicit casting: int to double
+
+        System.out.println(myInt);    // Output: 9
+        System.out.println(myDouble); // Output: 9.0
+    }
+}
+
 
 ## 4. Encapsulation :bookmark:
 
