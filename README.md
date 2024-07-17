@@ -2,9 +2,12 @@
  Java Object-Oriented Programming (OOP) Cheatsheet :coffee:
 <br>
 
-> Welcome to the comprehensive Java Object-Oriented Programming (OOP) Cheatsheet, designed to provide you with a quick reference to the essential concepts, principles, and syntax of OOP in Java. 
->  :atom: Authors: [Diego Aldana](https://github.com/PucBro),  [Yodak Aldana](https://github.com/Yodak91) and 
-[Edwin Anzures](https://github.com/Ed-VanDerSar)> 
+> Welcome to the comprehensive Java Object-Oriented Programming (OOP) Cheatsheet, designed to provide you with a quick reference to the essential concepts, principles, and syntax of OOP in Java.
+> 
+>  :e-mail: Authors: [Diego Aldana](https://github.com/PucBro),  [Yodak Aldana](https://github.com/Yodak91) and 
+[Edwin Anzures](https://github.com/Ed-VanDerSar)
+>  
+
 
 
 <br>
