@@ -1,4 +1,4 @@
-# OOP-Java-CheatSheet
+# $\color{Apricot}{OOP-Java-CheatSheet}$
 Java Cheat Sheet
 
 
