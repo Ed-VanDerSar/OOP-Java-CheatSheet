@@ -257,6 +257,8 @@ public class Main {
 | **Access Modifiers**          | Can have all types of access modifiers (public, protected, private) | Methods are public and abstract by default, and fields are public, static, and final by default |
 | **Inheritance**               | Used when classes share a common base class and want to share code (inherit behavior) | Used to define a contract that multiple classes can implement |
 | **Use Case**                  | Best for when classes share a common state and behavior | Best for defining a contract that unrelated classes can implement |
+| **Keyword while using it on a class** | `extends` | `implements` |
+| **Keyword while using it on a interface** | This can not happen | `interface` |
 
 
 <a name="top"></a>
