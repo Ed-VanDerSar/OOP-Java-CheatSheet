@@ -233,9 +233,7 @@ public class Main {
 }
 In this example, Dog and Cat override the makeSound() method of the Animal class to provide their own specific behavior.
 
-## 4. Encapsulation :bookmark:
 
-Encapsulation is a fundamental concept of Object-Oriented Programming (OOP) in Java. It is the mechanism of wrapping the data (variables) and the code (methods) acting on the data into a single unit, usually a class. This helps to keep the data safe from outside interference and misuse.
 ## 4. Encapsulation :bookmark:
 
 Encapsulation is a fundamental concept of Object-Oriented Programming (OOP) in Java. It is the mechanism of wrapping the data (variables) and the code (methods) acting on the data into a single unit, usually a class. This helps to keep the data safe from outside interference and misuse.
