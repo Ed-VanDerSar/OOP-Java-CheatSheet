@@ -267,11 +267,45 @@ public class Main {
 * Public getter and setter methods are provided to access and update these private fields.
 * The `setAge` method includes a validation check to ensure the age is positive.
 * In the `Main` class, an object of the `Person` class is created, and its fields are accessed and modified using the getter and setter methods.
+  ## Modifiers in Java: abstract, final, static
+
+| Modifier  | Applied to            | Description                                                                                      |
+|-----------|-----------------------|--------------------------------------------------------------------------------------------------|
+| **abstract** | Classes, Methods    | Must be implemented by subclasses if it's a class, and must be overridden if it's a method.       |
+| **final**  | Classes, Methods, Fields | Prevents modification: class cannot be subclassed, method cannot be overridden, field value cannot be changed. |
+| **static** | Methods, Fields, Nested Classes | Belongs to the class rather than instances of the class. Shared among all instances.             |
+
+### Code Examples
+
+#### abstract Example
+```java
+abstract class Animal {
+    abstract void makeSound(); // Abstract method
+
+    void sleep() {
+        System.out.println("Zzz...");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Bark");
+    }
+
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.makeSound();
+        myDog.sleep();
+    }
+}
+
 
   <br>
 
 > [!IMPORTANT]
 > Encapsulation ensures that the internal state of an object is protected and can only be modified through well-defined methods, enhancing the robustness and maintainability of the code.
+
 
 ## 5. Abstraction :bookmark:
 
