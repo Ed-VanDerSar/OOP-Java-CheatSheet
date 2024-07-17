@@ -132,39 +132,109 @@ Polymorphism is a core concept in Object-Oriented Programming (OOP) that allows 
 
 This type of polymorphism is achieved by method overloading. It allows a class to have more than one method with the same name, as long as their parameter lists are different.
 
-##### Example of Method Overloading
+##Method Overloading and Overriding in Java
 
-```java
-public class MathOperations {
+Method Overloading
+Definition: Method overloading is a feature that allows a class to have more than one method with the same name, but different parameters (different type, number, or both). It is a way to achieve compile-time polymorphism.
+
+Example: Consider a class MathUtils that has multiple add methods with different parameters to add integers and doubles.
+
+Benefits:
+
+Improves code readability by using the same method name for similar operations.
+Increases the flexibility of the code by allowing different types of parameters.
+How to Achieve Method Overloading:
+
+Define multiple methods with the same name but different parameter lists within the same class.
+Code Example in Java:
+
+java
+Copiar código
+class MathUtils {
     // Method to add two integers
-    public int add(int a, int b) {
+    int add(int a, int b) {
         return a + b;
     }
-
-    // Method to add three integers
-    public int add(int a, int b, int c) {
+    
+    // Overloaded method to add three integers
+    int add(int a, int b, int c) {
         return a + b + c;
     }
-
-    // Method to add two double values
-    public double add(double a, double b) {
+    
+    // Overloaded method to add two doubles
+    double add(double a, double b) {
         return a + b;
     }
+    
+    // Overloaded method to add three doubles
+    double add(double a, double b, double c) {
+        return a + b + c;
+    }
 }
-
 
 public class Main {
     public static void main(String[] args) {
-        MathOperations math = new MathOperations();
-
-        System.out.println(math.add(5, 3));           // Output: 8
-        System.out.println(math.add(5, 3, 2));        // Output: 10
-        System.out.println(math.add(5.5, 3.3));       // Output: 8.8
+        MathUtils math = new MathUtils();
+        System.out.println(math.add(2, 3)); // Output: 5
+        System.out.println(math.add(2, 3, 4)); // Output: 9
+        System.out.println(math.add(2.5, 3.5)); // Output: 6.0
+        System.out.println(math.add(2.5, 3.5, 4.5)); // Output: 10.5
     }
 }
-```
+###Method Overriding
 
+Definition: Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method in the subclass should have the same name, return type, and parameters as the method in the superclass. It is a way to achieve runtime polymorphism.
 
+Example: Consider a base class Animal with a method makeSound(). Subclasses Dog and Cat can override this method to provide their specific implementation.
+
+Benefits:
+
+Allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
+Supports runtime polymorphism, allowing method calls to be resolved at runtime.
+How to Achieve Method Overriding:
+
+Use the @Override annotation (optional but recommended) to indicate that a method is being overridden in the subclass.
+Code Example in Java:
+
+java
+Copiar código
+// Base class or superclass
+class Animal {
+    void makeSound() {
+        System.out.println("The animal makes a sound");
+    }
+}
+
+// Derived class or subclass
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("The dog barks");
+    }
+}
+
+// Derived class or subclass
+class Cat extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("The cat meows");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+        
+        myDog.makeSound(); // Output: The dog barks
+        myCat.makeSound(); // Output: The cat meows
+    }
+}
+In this example, Dog and Cat override the makeSound() method of the Animal class to provide their own specific behavior.
+
+## 4. Encapsulation :bookmark:
+
+Encapsulation is a fundamental concept of Object-Oriented Programming (OOP) in Java. It is the mechanism of wrapping the data (variables) and the code (methods) acting on the data into a single unit, usually a class. This helps to keep the data safe from outside interference and misuse.
 ## 4. Encapsulation :bookmark:
 
 Encapsulation is a fundamental concept of Object-Oriented Programming (OOP) in Java. It is the mechanism of wrapping the data (variables) and the code (methods) acting on the data into a single unit, usually a class. This helps to keep the data safe from outside interference and misuse.
