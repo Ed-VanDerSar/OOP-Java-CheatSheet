@@ -13,11 +13,11 @@
 <br>
 
 ## Table of Contents 
-1. [Key Concepts](#1-key-concepts)
-2. [Inheritance](#2-inheritance)
-3. [Polymorphism](#3-polymorphism)
-4. [Encapsulation](#5-encapsulation)
-5. [Abstraction](#6-abstraction)
+1. [Key Concepts](#1-key-concepts-bookmark)
+2. [Inheritance](#2-inheritance-bookmark)
+3. [Polymorphism](#3-polymorphism-bookmark)
+4. [Encapsulation](#5-encapsulation-bookmark)
+5. [Abstraction](#6-abstraction-bookmark)
 
 ## 1. Key Concepts :bookmark:
 
