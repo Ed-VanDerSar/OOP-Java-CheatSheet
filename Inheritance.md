@@ -1,77 +1,84 @@
-# $\color{Apricot}{Herencia en Java}$
+# $\color{Apricot}{Herencia\ en\ Java}$
 
-## Introduction
+## Qué es la herencia?
+La herencia es una manera de clasificar los objetos en distintintos niveles, siguiento una 
+jerarquía: El objeto más abstracto esta en la cima de la jerarquía y los mås detallados en la base.
 
-Inheritance is a core concept in Java and object-oriented programming (OOP) that allows a new class to inherit properties and behavior from an existing class. This promotes code reuse, reduces redundancy, and helps in maintaining a hierarchical class structure.
+El término herencia es usado para indicar que cuando nos movemos hacia abajo en la jerarquía,
+cada clasde hereda las características de la clase de arriba y, además añade niveles extra 
+de detalles y compartamentisn específicos de clase.
 
-## What is Inheritance?
 
-Inheritance in Java is the mechanism where one class, known as the subclass (or child class), derives properties and behaviors (fields and methods) from another class, known as the superclass (or parent class). The subclass inherits everything from the superclass, but it can also have its own additional properties and methods, or override the inherited ones.
-
-## Syntax
-
-The inheritance relationship is established using the extends keyword:
+Las relaciones de herencia se especifican con las siguientes keywords:
 ```java
 class Superclass {
-    // Fields and methods of the superclass
+    // Atributos y métodos de la superclase
 }
 
 class Subclass extends Superclass {
-    // Additional fields and methods or overridden methods
+    // tributos y métodos adicionales o en override 
 }
 ```
 
-## Example
+## Ejemplo
 
-Let’s consider a simple example:
 ```java
 class Animal {
-    void eat() {
-        System.out.println("This animal eats food.");
+    void come() {
+        System.out.println("El animal se alimenta.");
     }
 }
 
-class Dog extends Animal {
-    void bark() {
-        System.out.println("The dog barks.");
+class Perro extends Animal {
+    void ladra() {
+        System.out.println("El perro ladra.");
     }
 }
 ```
-In this example, Dog is a subclass of Animal. The Dog class inherits the eat method from the Animal class and adds a new method bark.
+En este ejemplo, `Perro` es una subclase de `Animal`. La clase perro hereda el el método `come` de `Animal`
+y añade el nuevo método `ladra`.
 
-## How It Works
+<br>
 
-With inheritance, the subclass has access to all non-private fields and methods of the superclass. You can create an instance of the subclass and call both its own methods and the inherited ones:
+> [!IMPORTANT]> Las subclases tienen acceso a todos los atributos y métodos no privados de la superclase 
+> Cuando se crean instancias de la subclase es posible llamar a sus propios métodos 
+> y a los métodos heradados
+
 ```java
-Dog myDog = new Dog();
-myDog.eat();  // Inherited method from Animal class
-myDog.bark(); // Method from Dog class
+Perro miPerro = new Perro();
+miPerro.come();  // Método de clase Animal
+miPerro.ladra(); // Método de clase Perro
 ```
 
-## Overriding Methods
+> [!IMPORTANT]
+> Un especto muy importante de la herencia es el método `overriding`. Esto permite a una subclase
+>implementar de manera específica un método que ya esta de hecho defindo 
+> en la supercalse.
+> Esto se hace definiendo un método en la subclase con la misma firma y nombre del método 
+> de la superclase.
 
-One powerful feature of inheritance is method overriding. This allows a subclass to provide a specific implementation for a method that is already defined in its superclass. This is done by defining a method in the subclass with the same signature as the method in the superclass:
 ```java
-class Dog extends Animal {
-    @Override
-    void eat() {
-        System.out.println("The dog eats bones.");
+class Perro extends Animal {
+    void come() {
+        System.out.println("El perro come croquetas.");
     }
 }
 ```
-Here, the eat method in the Dog class overrides the eat method in the Animal class. When myDog.eat() is called, it uses the overridden method in the Dog class.
 
-## Access Control and Inheritance
+El método `come` de la clase `Perro` sobrescribir _(overrides)_ al método `come`
+de la clase `Animal`, de manera que cuando `miPerro.come()` es llamado, este usa
+el método sobrescrito de la clase `Perro`.
 
-Private members of the superclass are not accessible directly in the subclass.
-Protected members are accessible within the same package or subclasses.
-Public members are accessible everywhere.
-Default (package-private) members are accessible within the same package but not outside it.
-Benefits of Inheritance
+## Cómo funcion?
 
-Code Reusability: Inheritance allows you to reuse code from the superclass without having to rewrite it.
-Extensibility: You can easily extend existing classes and add new functionality.
-Polymorphism: Inheritance enables polymorphism, where a subclass can be treated as an instance of its superclass, allowing for dynamic method binding and more flexible code.
-## Conclusion
+- Métodos y atributos _privados_ de la superclase no pueden ser alcanzados directamete por la 
+subclases.
+- Métodos y atributos _públicos_ de la superclase __son accesibles por__ todas
+  subclases.
 
-Inheritance is a fundamental concept in Java that helps in building a clear and maintainable code structure. By using inheritance, you can create a hierarchy of classes that share common behavior, reducing code duplication and enhancing the modularity of your application.
+
+## Ventajas
+
+- La herencia nos permite usar céodigo de las superclases sin la necesidad de reescribrilos.
+- Se pueden extender facilmente clases ya creadas y añadir nuevas funcionalidades.
+

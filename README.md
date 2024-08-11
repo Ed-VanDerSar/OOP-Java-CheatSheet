@@ -193,7 +193,6 @@ Use the @Override annotation (optional but recommended) to indicate that a metho
 Code Example in Java:
 
 ```java
-Copiar código
 // Base class or superclass
 class Animal {
     void makeSound() {
